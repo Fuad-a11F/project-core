@@ -9,7 +9,7 @@ passport.use(
       callbackURL: "http://localhost:5000/auth/facebook/callback",
     },
     function (accessToken, refreshToken, profile, done) {
-      one(null, profile);
+      done(null, profile);
     },
   ),
 );
